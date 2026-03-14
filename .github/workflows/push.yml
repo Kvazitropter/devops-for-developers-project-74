@@ -20,6 +20,9 @@ jobs:
       -
         name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
+      - 
+        name: List files
+        run: ls -la
       -
         name: Run tests for Docker production image
         run: make ci
