@@ -5,6 +5,5 @@ services:
       dockerfile: Dockerfile.production
     command: make test
     image: kvazitropter/devops-for-developers-project-74
-    working_dir: /app
     ports:
       - "8080:8080"
